@@ -5,5 +5,6 @@ Hochwasserwarnsystem
 
 #Windows
 optionale Features aktivieren:
--windows subsystem linux und vm platform
+-- windows subsystem linux und vm platform
 ubuntu aus ms appstore holen
+ubuntu starten und curl https://raw.githubusercontent.com/NiklasHubGit/Hochwasserwarnsystem/main/script.sh?token=GHSAT0AAAAAACAFV4C4H4FFTCFPFUHBMIW6ZAUP5GA
