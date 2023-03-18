@@ -1,4 +1,3 @@
-
 from plyer import notification
 from io import BytesIO
 import subprocess
