@@ -1,10 +1,10 @@
 # Hochwasserwarnsystem
 Hochwasserwarnsystem
-chmod +x script.sh
-./script.sh
 
-# Linux MaCos und Windows mit wsl(für Technische Menschen)
+# Linux und MacOS
+Soe müssenm diesen Befehl ins Terminal kopieren und dann die script.sh Datei in den Autostart bewegen
 curl https://raw.githubusercontent.com/NiklasHubGit/Hochwasserwarnsystem/main/script.sh?token=GHSAT0AAAAAACAFV4C4H4FFTCFPFUHBMIW6ZAUP5GA &&chmod +x script.sh &&./script.sh
 
 # Windows Nativ
-herunterladen und entpacken und in den Ordenr machen
+Ihr müsst Python3 installiert haben.
+Danach müsst ihr den Ordner "windows" herunterladen und main.bat in dem Autostart hinzufügen
