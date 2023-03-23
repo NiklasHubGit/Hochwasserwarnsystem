@@ -9,6 +9,6 @@ curl https://raw.githubusercontent.com/NiklasHubGit/Hochwasserwarnsystem/main/sc
 SIe müsst Python3 installiert haben.
 Danach müsst ihr den Ordner "windows" herunterladen und main.bat ausführen und in dem Autostart hinzufügen
 
-#MacoS
+# MacoS
 Um die App unter ausführen zu können müssen sie den Macos ordner herunterladen, python installieren, und dann das Script ausführbar machen (chmod+x).
 Zusätzlich muss die App im Autostart hinzufügt werden.
