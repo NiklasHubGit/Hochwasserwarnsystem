@@ -15,7 +15,7 @@ while True:
         notification.notify(
             title = "ALERT!!!",
             message = "Achtung bei dir gibts hochwasser",
-            timeout = 4
+            timeout = 1
         )
-    sleep(30)
+    sleep(1)
     continue
