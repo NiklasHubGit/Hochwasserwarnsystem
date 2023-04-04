@@ -1,6 +1,6 @@
 # Hochwasserwarnsystem
 
-# Linux BSD und Solaris mit gui
+# Linux BSD und Solaris
 Sie müssen den Ordner "Linux" herunterladen und dann "app.py" mit nohup python3 ausführen.
 
 
