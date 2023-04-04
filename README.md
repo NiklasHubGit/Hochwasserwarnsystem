@@ -1,10 +1,5 @@
 # Hochwasserwarnsystem
 
-
-# Linux BSD und Solaris ohne gui
-Sie müssen diesen Befehl ins Terminal kopieren und dann die script.sh Datei in den Autostart hinzufügen.
-curl https://raw.githubusercontent.com/NiklasHubGit/Hochwasserwarnsystem/main/script.sh?token=GHSAT0AAAAAACAFV4C4H4FFTCFPFUHBMIW6ZAUP5GA &&chmod +x script.sh &&./script.sh
-
 # Linux BSD und Solaris mit gui
 Sie müssen den Ordner "Linux" herunterladen und dann "app.py" mit nohup python3 ausführen.
 
