@@ -1,1 +1,0 @@
-"decoded_payload":{"Distance":1008

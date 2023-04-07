@@ -70,5 +70,7 @@ def animate_button(canvas):
   # start the event loop
 root.mainloop()
 print("gui ist nun zuende")
+script = 'setup2.ps1'
+os.system(script)
 script = 'python3 test.py'
 os.system(script)
