@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+// import 'package:intl/intl.dart';
 
 void main() {
   runApp(MyApp());
@@ -100,8 +100,8 @@ class HomePage extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20),
-          Text('Hallo $user', style: TextStyle(fontSize: 15)),
-          Text('heute ist der ${DateFormat('yMd').format(DateTime.now())}'),
+          Text('Hallo $user', style: TextStyle(fontSize: 15,color: Colors.white)),
+          // Text('heute ist der ${DateFormat('yMd').format(DateTime.now())}'),
           SizedBox(height: 10),
           buildMessorteCard(),
           SizedBox(height: 20),
@@ -132,7 +132,8 @@ class HomePage extends StatelessWidget {
                 Text(messort, style: TextStyle(fontSize: 18)),
                 Text("Messstationen: ${messstationenZahl[messort]}"),
                 Text(
-                  warnungen[messort],
+                  //warnungen[messort],
+                  "hello",
                   style: TextStyle(color: Colors.green[600]),
                 ),
                 Container(
