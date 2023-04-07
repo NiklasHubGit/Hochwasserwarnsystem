@@ -89,23 +89,36 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                child: Icon(Icons.menu),
+                child: Icon(
+                  Icons.menu,
+                  color: Colors.white,
+                ),
               ),
               Row(
                 children: [
-                  Icon(Icons.search),
-                  Icon(Icons.notifications_outlined),
+                  Icon(
+                    Icons.search,
+                    color: Colors.white,
+                  ),
+                  Icon(
+                    Icons.notifications_outlined,
+                    color: Colors.white,
+                  ),
                 ],
               ),
             ],
           ),
           SizedBox(height: 20),
-          Text('Hallo $user', style: TextStyle(fontSize: 15,color: Colors.white)),
+          Text('Hallo $user',
+              style: TextStyle(fontSize: 15, color: Colors.white)),
           // Text('heute ist der ${DateFormat('yMd').format(DateTime.now())}'),
           SizedBox(height: 10),
           buildMessorteCard(),
           SizedBox(height: 20),
-          Text("Messstationen"),
+          Text(
+            "Messstationen",
+            style: TextStyle(color: Colors.white),
+          ),
           buildWerteListe(),
         ],
       ),
@@ -129,11 +142,12 @@ class HomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(messort, style: TextStyle(fontSize: 18)),
-                Text("Messstationen: ${messstationenZahl[messort]}"),
+                Text(messort,
+                    style: TextStyle(fontSize: 18, color: Colors.white)),
+                Text("Messstationen: ${messstationenZahl[messort]}",
+                    style: TextStyle(color: Colors.white)),
                 Text(
-                  //warnungen[messort],
-                  "hello",
+                  "${warnungen[messort]}",
                   style: TextStyle(color: Colors.green[600]),
                 ),
                 Container(
@@ -160,7 +174,7 @@ class HomePage extends StatelessWidget {
 
   Widget buildWerteListe() {
     return Container(
-      height: 300,
+      height: 400,
       child: ListView.builder(
         itemCount: werte.length,
         itemBuilder: (context, index) {
@@ -177,8 +191,11 @@ class HomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(wert, style: TextStyle(fontSize: 18)),
-                Text('${werte[wert]} mm bis zur Wasseroberfläche'),
+                Text(wert, style: TextStyle(fontSize: 18, color: Colors.white)),
+                Text(
+                  '${werte[wert]} mm bis zur Wasseroberfläche',
+                  style: TextStyle(color: Colors.white),
+                ),
                 IconButton(
                   icon: Icon(Icons.add),
                   onPressed: () => print('test'),
