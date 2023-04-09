@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                   color: secondaryColor,
                   borderRadius: BorderRadius.circular(35),
                 ),
-                padding: EdgeInsets.fromLTRB(20, 50, 20, 5),
+                padding: const EdgeInsets.fromLTRB(20, 50, 20, 5),
                 child: Column(
                   children: [
                     buildFirstPageContents(),
@@ -89,14 +89,14 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                child: Icon(
+                child: const Icon(
                   Icons.menu,
                   color: Colors.white,
                 ),
               ),
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.search,
                     color: Colors.white,
                   ),
@@ -108,14 +108,14 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Text('Hallo $user',
-              style: TextStyle(fontSize: 15, color: Colors.white)),
+              style: const TextStyle(fontSize: 15, color: Colors.white)),
           // Text('heute ist der ${DateFormat('yMd').format(DateTime.now())}'),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           buildMessorteCard(),
-          SizedBox(height: 20),
-          Text(
+          const SizedBox(height: 20),
+          const Text(
             "Messstationen",
             style: TextStyle(color: Colors.white),
           ),
@@ -143,9 +143,9 @@ class HomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(messort,
-                    style: TextStyle(fontSize: 18, color: Colors.white)),
+                    style: const TextStyle(fontSize: 18, color: Colors.white)),
                 Text("Messstationen: ${messstationenZahl[messort]}",
-                    style: TextStyle(color: Colors.white)),
+                    style: const TextStyle(color: Colors.white)),
                 Text(
                   "${warnungen[messort]}",
                   style: TextStyle(color: Colors.green[600]),
@@ -157,7 +157,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.white.withOpacity(0.12),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  padding: EdgeInsets.only(right: 50),
+                  padding: const EdgeInsets.only(right: 50),
                   child: Container(
                     decoration: BoxDecoration(
                       color: pinkColor,
@@ -186,18 +186,20 @@ class HomePage extends StatelessWidget {
             ),
             height: 130,
             width: 270,
-            margin: EdgeInsets.symmetric(vertical: 5),
-            padding: EdgeInsets.all(15),
+            margin: const EdgeInsets.symmetric(vertical: 5),
+            padding: const EdgeInsets.all(15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(wert, style: TextStyle(fontSize: 18, color: Colors.white)),
+                Text(wert,
+                    style: const TextStyle(fontSize: 18, color: Colors.white)),
                 Text(
                   '${werte[wert]} mm bis zur Wasseroberfläche',
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
                 IconButton(
-                  icon: Icon(Icons.add),
+                  icon: const Icon(Icons.add),
+                  // ignore: avoid_print
                   onPressed: () => print('test'),
                 ),
               ],
