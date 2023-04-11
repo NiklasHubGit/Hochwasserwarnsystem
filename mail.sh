@@ -30,3 +30,9 @@ cat HW3-distanceTime.txt | awk -F " " '{print $1}' > HW3-Dis.txt
 cat HW3-distanceTime.txt | awk -F " " '{print $2}' | awk -F "." '{print $1}' | awk -F "T" '{print $1"_"$2}' \
 > HW3-Time.txt
 cat HW3-distanceTime.txt | awk -F " " '{print $3}' | cut -c 2- > HW3-Stamp.txt
+
+if [ $(tail -1 HW4-Dis.txt) -lt 1000 ]
+then
+   python3 email.py
+   notify-send "warnung Hochwasser!!"
+fi
