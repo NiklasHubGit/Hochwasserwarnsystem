@@ -40,6 +40,7 @@ then
 fi
 i=$(awk "BEGIN {print $i+$a; exit}")
 
+
 echo "Durchlauf $i"
 sleep 1m
 done
