@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: const RootPage(),
         theme: ThemeData(
-          primarySwatch: Colors.green,
+          primarySwatch: Colors.red,
         ));
   }
 }
@@ -31,8 +31,16 @@ class _RootPageState extends State<RootPage> {
         appBar: AppBar(
           title: const Text('Hochwasserwarnapp'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
-        ));
+        body: Center(
+            // child: Text('Hello World'),
+            child: Column(children: [
+          Column(
+            children: const [
+              Text('Ochsenhausen'),
+              Text('keine Warnung'),
+              Text('4 Messstationen'),
+            ],
+          )
+        ])));
   }
 }
