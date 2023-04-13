@@ -1,7 +1,3 @@
-//write the main loop
-import 'package:flutte2/main_default.dart';
-
-//import material.dart
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,9 +28,11 @@ class _RootPageState extends State<RootPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Hochwasserwarnapp'),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Hochwasserwarnapp'),
+        ),
+        body: const Center(
+          child: Text('Hello World'),
+        ));
   }
 }
