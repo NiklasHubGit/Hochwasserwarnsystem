@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: const RootPage(),
         theme: ThemeData(
-          primarySwatch: Colors.red,
+          primarySwatch: Colors.purple,
         ));
   }
 }
@@ -34,13 +34,36 @@ class _RootPageState extends State<RootPage> {
         body: Center(
             // child: Text('Hello World'),
             child: Column(children: [
-          Column(
-            children: const [
-              Text('Ochsenhausen'),
-              Text('keine Warnung'),
-              Text('4 Messstationen'),
-            ],
-          )
+          Container(
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 193, 115, 207),
+                border: Border.all(
+                    color: Color.fromARGB(255, 19, 17, 17), width: 2),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Column(
+                children: const [
+                  Text('Ochsenhausen'),
+                  Text('keine Warnung'),
+                  Text('4 Messstationen'),
+                ],
+              )),
+          Container(
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 193, 115, 207),
+                border: Border.all(
+                    color: Color.fromARGB(255, 19, 17, 17), width: 2),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Column(
+                children: const [
+                  Text('Ochsenhausen'),
+                  Text('keine Warnung'),
+                  Text('4 Messstationen'),
+                ],
+              ))
         ])));
   }
 }
