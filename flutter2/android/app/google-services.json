@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1023314700553",
+    "project_id": "hochwasserwarn",
+    "storage_bucket": "hochwasserwarn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023314700553:android:da2a62a671e1bd09fd8bd8",
+        "android_client_info": {
+          "package_name": "com.hochwasserwarn.suiii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023314700553-ap219ovdiuprf95h35pbu8dkoi7g3u8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9o-xC3Lp2VuMCpxqpo3ks6rjaLU17LGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023314700553-ap219ovdiuprf95h35pbu8dkoi7g3u8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
